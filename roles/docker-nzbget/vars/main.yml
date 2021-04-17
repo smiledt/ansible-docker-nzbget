@@ -1,0 +1,23 @@
+---
+
+nzbget_name: nzbget
+nzbget_image: linuxserver/nzbget
+nzbget_ports:
+  - 6789:6789
+nzbget_config_directory: /opt/nzbget
+nzbget_main_directory: /tmp/nzbget
+nzbget_complete_directory: /mnt/media/downloads
+nzbget_environment_variables:
+  PUID: "1000"
+  PGUID: "1000"
+  TZ: America/Chicago
+
+nzbget_docker_additional_options:
+  restart_policy: unless-stopped
+
+nzbget_config:
+  MainDir: '/downloads'
+  ScriptDir: '/config/scripts'
+  LockFile: '/config/nzbget.lock'
+  LogFile: '/config/nzbget.log'
+  DestDir: '/completed' 
