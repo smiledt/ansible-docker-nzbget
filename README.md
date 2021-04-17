@@ -1,7 +1,7 @@
 Docker-NZBGet
 =========
 
-A role to spin up a Sonarr docker container. This role was heavily inspired by (and all credit goes to) [Calvin Bui](https://calvin.me)'s role. This is only being published for integration into my AWX instance. 
+A role to spin up a NZBGet docker container. This role was heavily inspired by (and all credit goes to) [Calvin Bui](https://calvin.me)'s role. This is only being published for integration into my AWX instance. 
 
 Requirements
 ------------

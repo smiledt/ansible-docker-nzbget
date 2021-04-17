@@ -1,4 +1,4 @@
-# This playbook deploys a Sonarr docker container on a docker host.
+# This playbook deploys a NZBGet docker container on a docker host.
 
 - name: Deploy NZBGet Container.
   hosts: nzbget
