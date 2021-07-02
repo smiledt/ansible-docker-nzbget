@@ -5,6 +5,8 @@
     path: "{{ item }}"
     state: directory
     mode: 0777
+    owner: "{{ media_user }}"
+    group: "{{ media_group }}"
   loop:
     - "{{ nzbget_config_directory }}"
     - "{{ nzbget_download_directory }}"

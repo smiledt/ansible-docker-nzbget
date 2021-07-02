@@ -8,8 +8,8 @@ nzbget_config_directory: /opt/nzbget
 nzbget_main_directory: /tmp/nzbget
 nzbget_complete_directory: /mnt/media/downloads
 nzbget_environment_variables:
-  PUID: "1000"
-  PGUID: "1000"
+  PUID: "{{ media_uid }}"
+  PGID: "{{ media_gid }}"
   TZ: America/Chicago
 
 nzbget_docker_additional_options:
@@ -21,3 +21,8 @@ nzbget_config:
   LockFile: '/config/nzbget.lock'
   LogFile: '/config/nzbget.log'
   DestDir: '/completed' 
+
+media_user: mediasvc
+media_uid: 1099
+media_group: media
+media_gid: 1099
