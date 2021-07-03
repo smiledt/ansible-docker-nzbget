@@ -5,6 +5,9 @@
 # Ignore inventory files as well.
 *.inv
 
+# Ignore testing config files
+*ansible.cfg
+
 *.retry
 *.pyc
 *.DS_Store
