@@ -8,8 +8,8 @@ nzbget_config_directory: /opt/nzbget
 nzbget_main_directory: /tmp/nzbget
 nzbget_complete_directory: /mnt/media/downloads
 nzbget_environment_variables:
-  PUID: "{{ media_uid }}"
-  PGID: "{{ media_gid }}"
+  PUID: '"{{ media_uid }}"'
+  PGID: '"{{ media_gid }}"'
   TZ: America/Chicago
 
 nzbget_docker_additional_options:
