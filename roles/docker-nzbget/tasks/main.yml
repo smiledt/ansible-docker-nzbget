@@ -38,5 +38,7 @@
     dest: "{{ nzbget_config_directory }}/nzbget.conf"
     regexp: "^{{ item.key }}="
     line: "{{ item.key }}={{ item.value }}"
+    owner: mediasvc
+    group: media
   loop: "{{ lookup('dict', nzbget_config) }}"
   notify: Restart NZBGet
